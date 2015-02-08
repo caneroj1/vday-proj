@@ -5,7 +5,7 @@ $(function() {
     if(event.direction === "right") {
       videoIndex -= 1
       if(videoIndex < startingIndex) {
-        videoIndex = parseInt($('#carousel-videos').data('total')) + startingIndex;
+        videoIndex = parseInt($('#carousel-videos').data('total')) + startingIndex - 1;
       }
 
       $('#video-title').text($('#' + videoIndex).data('title'));
@@ -30,4 +30,3 @@ $(function() {
 
   if ($('#datepicker').length > 0) $("#datepicker").datepicker();
 });
-
