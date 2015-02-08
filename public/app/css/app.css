@@ -1,0 +1,96 @@
+h1
+{
+  font-family: 'Lovers Quarrel', cursive;
+  color: pink;
+  font-size: 75px;
+  margin-top: 40px;
+}
+
+h2,
+p
+{
+  font-weight: 200;
+}
+
+hr.pretty
+{
+    padding: 0;
+    border: none;
+    border-top: medium double pink;
+    color: pink;
+    text-align: center;
+}
+
+body {
+  background-color: #f3f6ef;
+}
+
+#carousel-videos
+{
+  margin-top: 45px;
+}
+
+.carousel-control.right
+{
+  background-image: linear-gradient(to right,rgba(255, 192, 203, 0.08) 0,pink);
+}
+
+.carousel-control.left
+{
+  background-image: linear-gradient(to right,pink 0,rgba(255, 192, 203, 0.08) 100%);
+}
+
+.video-container
+{
+  position: relative;
+  height: 320px;
+}
+
+video
+{
+  position: absolute;
+  top:0;
+  height: 90%;
+  width: 70%;
+  left:15%;
+  margin-top: 2.5%;
+  margin-bottom: 2.5%;
+  background:transparent url('app/images/bg.jpg') no-repeat 0 0;
+  -webkit-background-size:cover;
+  -moz-background-size:cover;
+  -o-background-size:cover;
+  background-size:cover;
+}
+
+.carousel-indicators
+{
+  bottom: -35px;
+}
+
+.carousel-indicators .active
+{
+  background-color: pink !important;
+}
+
+.carousel-indicators li
+{
+  border: 1px solid pink;
+}
+
+.form-title
+{
+  margin-top: 20px;
+  margin-bottom: 25px;
+}
+
+.form-horizontal,
+#video-title
+{
+  margin-top: 25px;
+}
+
+.picker:hover
+{
+  cursor: default;
+}
+
