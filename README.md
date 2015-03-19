@@ -6,7 +6,7 @@
 <ul>
   <li>Streaming is implemented through AWS S3 and CloudFront.</li>
   <li>Nginx and PhusionPassenger app running on EC2.</li>
-  <li>Sinatra backend with a postgresql database.</li>
+  <li>Sinatra backend with a sqlite3 database.</li>
 </ul>
 
 <p>Check it out <a href="happyvalentinesdayjulia.com">Here!</a></p>
