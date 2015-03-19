@@ -1,4 +1,12 @@
-# v-day-project
-a repo for a website I made for my gf for valentine's day!
+<h1>Valentine's Day Project</h1>
 
-Check it out <a href="http://www.happyvalentinesdayjulia.com">here</a>.
+<p>I made this as a Valentine's Day gift for my significant other. It is a Sinatra-backed app that streams videos of my drumming for the pleasure of others.</p>
+
+<h3>Implementation Details</h3>
+<ul>
+  <li>Streaming is implemented through AWS S3 and CloudFront.</li>
+  <li>Nginx and PhusionPassenger app running on EC2.</li>
+  <li>Sinatra backend with a postgresql database.</li>
+</ul>
+
+<p>Check it out <a href="happyvalentinesdayjulia.com">Here!</a></p>

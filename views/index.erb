@@ -3,6 +3,7 @@
     <link rel="stylesheet" type="text/css" href="/vendor/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="/app/css/app.css">
     <link href='http://fonts.googleapis.com/css?family=Lovers+Quarrel' rel='stylesheet' type='text/css'>
+    <script type='text/javascript' src='https://d35icl82hf5ai1.cloudfront.net/jwplayer.js'></script>
     <title>Videos</title>
   </head>
   <body>
@@ -33,10 +34,14 @@
                   <div class="item text-center">
                 <% end %>
                     <div class="video-container" id="<%= video.id %>" data-title="<%= video.title %>" data-date="<%= video.date.strftime('%-m/%d/%Y') %>">
-                      <video controls preload="none" poster="play-button.png">
-                          <source src="<%= video.url %>" type="video/mp4">
-                        Your browser does not support the video tag.
-                      </video>
+                      <div id='mediaplayer-<%= video.id %>'></div>
+                      <script type="text/javascript">
+                         jwplayer('mediaplayer-<%= video.id %>').setup({
+                          file: "http://d35icl82hf5ai1.cloudfront.net/<%= video.title.gsub(" ", "%20") %>.mp4",
+                          width: "100%",
+                          height: "480"
+                         });
+                      </script>
                     </div>
                   </div>
               <% end %>
@@ -65,4 +70,3 @@
   <script type="text/javascript" src="app/js/app.js"></script>
   </body>
 </html>
-
